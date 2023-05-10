@@ -1,0 +1,134 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: black;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "header header header header header header header header header header header header"
+    "menu main main main main main main main main main main main";
+  gap: 20px;
+}
+
+/* SECCIÓN DE HEADER --------------------------------------------------------------------------------- */
+
+header {
+  grid-area: header;
+  background-image: url(../img/header.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 180px;
+}
+header h1 {
+  display: grid;
+  place-items: center;
+  text-align: center;
+  height: 100%;
+  font-family: "Satisfy", cursive;
+  color: white;
+  letter-spacing: 1px;
+  font-size: 50px;
+  font-weight: 400;
+}
+
+/* SECCIÓN DE MENU -------------------------------------------------------------------------------------------- */
+
+menu {
+  grid-area: menu;
+  background-color: rgb(46, 46, 46);
+  height: 100%;
+  border-radius: 7px;
+}
+
+menu h3 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  margin-bottom: 50px;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  margin-top: 10px;
+}
+
+menu ul {
+  justify-content: center;
+  text-align: center;
+}
+
+menu li {
+  margin: 10px;
+}
+
+menu a {
+  color: white;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Roboto", sans-serif;
+}
+
+menu a:hover {
+  color: orange;
+}
+
+/* SECCIÓN DE PRODUCTOS--------------------------------------------------------------------------------------- */
+
+main {
+  grid-area: main;
+  background-color: rgb(0, 0, 0);
+}
+
+main img {
+  width: 220px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+/* 
+ HOOOOLA PROFE, ESTA CONSTRUCCIÓN DE IMAGENES QUE VIENE ES LA VERSION UTILIZANDO FLEX.....
+  NO ENTENDI SI LA CONSTRUCCIÓN DE LAS FOTOS ERA CON GRID O FLEX ASI Q LA HICE DE LAS 2 MANERAS,
+ USTED PUEDE HABILITAR CUALQUIERA DE LAS 2 CON "CNTRL + K + C" HABILITE O DESABILITE LA Q QUIERA SALUDOS!!!  */
+
+/* CONSTRUCCIÓN CON FLEX AQUI ABAJOOO ------------------------------------------ */
+
+/* .first-items {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .second-items {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .choco {
+    color: white;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+  }
+   */
+
+/* CONSTRUCCIÓN CON GRID AQUI ABAJO ---------------------------------------------- */
+
+.first-items {
+  display: grid;
+  grid-template-areas: "img img img";
+  place-items: center;
+}
+
+.second-items {
+  display: grid;
+  grid-template-areas: "img img img";
+  place-items: center;
+}
+
+.choco {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
