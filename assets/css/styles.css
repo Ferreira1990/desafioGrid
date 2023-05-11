@@ -11,7 +11,8 @@ body {
   display: grid;
   grid-template-areas:
     "header header header header header header header header header header header header"
-    "menu main main main main main main main main main main main";
+    "menu main main main main main main main main main main main"
+    "footer footer footer footer footer footer footer footer footer footer footer footer";
   gap: 20px;
 }
 
@@ -131,4 +132,37 @@ main img {
   color: white;
   font-family: "Roboto", sans-serif;
   text-align: center;
+}
+
+/* FOOTER ------------------------------------------------------------------------------------------------------------------------------------------ */
+
+footer {
+  grid-area: footer;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  background-color: rgb(53, 53, 53);
+}
+
+.icons {
+  font-size: 28px;
+  margin: 20px;
+}
+
+.icons i {
+  padding: 0 20px 0 20px;
+}
+
+.icons i:hover {
+  cursor: pointer;
+  background-color: blueviolet;
+  border-radius: 100%;
+}
+
+footer h3 {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  padding-bottom: 20px;
 }
