@@ -78,6 +78,11 @@ menu a:hover {
   color: orange;
 }
 
+menu i{
+  font-size: 20px;
+  padding-left: 10px;
+}
+
 /* SECCIÓN DE PRODUCTOS--------------------------------------------------------------------------------------- */
 
 main {
